@@ -1,7 +1,6 @@
-// Like, postgresql://user:password@localhost:5432/database/schema
 datasource db {
   provider = "postgresql"
-  url      = "<your connection string>"
+  url      = "postgresql://pink_industrial_briana:DcvRxiShj9@db-provision-postgres23452b4.c8yxynpcltwd.us-east-1.rds.amazonaws.com:5432/white_kite"
 }
 
 generator client {
@@ -9,8 +8,9 @@ generator client {
 }
 
 model User {
-  id    String  @default(cuid()) @id
+  id    String  @id @default(cuid())
   email String  @unique
   nick  String
-  // name String?
+  // Comment/uncomment this and in index.js 
+  name  String?
 }
