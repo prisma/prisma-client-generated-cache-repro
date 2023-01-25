@@ -1,9 +1,7 @@
 .env
 .env.build
-public/
 
 .vercel
+.netlify
 
 node_modules/
-# Local Netlify folder
-.netlify
