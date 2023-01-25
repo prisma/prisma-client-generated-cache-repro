@@ -15,6 +15,7 @@
     "node-fetch": "2.6.7"
   },
   "scripts": {
+    "build": "echo build!",
     "disabled-build": "node build.js",
     "disabled2-build": "npx prisma generate && echo 'Generated Prisma Client from build'",
     "disabled-vercel-build": "npx prisma generate && echo 'Generated Prisma Client from vercel-build'",
