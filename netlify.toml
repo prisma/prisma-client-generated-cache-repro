@@ -1,4 +1,4 @@
 [build]
-command = "prisma generate"
+# command = "prisma generate"
 functions = "functions/"
 publish = "public/"
