@@ -21,7 +21,7 @@ exports.handler = async () => {
         email: "alice@prisma.io",
         nick: "al",
         // Comment/uncomment this and in schema.prisma
-        name: "Alice",
+        // name: "Alice",
       },
     });
   } catch (e) {
