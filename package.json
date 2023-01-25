@@ -4,18 +4,18 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "prisma": "dev",
+    "prisma": "4.9.0",
     "ts-node": "10.9.1",
     "vercel": "28.13.1"
   },
   "dependencies": {
     "@jolg42/debug-package-scripts": "0.0.1",
-    "@prisma/client": "dev",
+    "@prisma/client": "4.9.0",
     "fetch-retry": "5.0.3",
     "node-fetch": "2.6.7"
   },
   "scripts": {
-    "build": "echo build!",
+    "build": "echo 'build!'",
     "disabled-build": "node build.js",
     "disabled2-build": "npx prisma generate && echo 'Generated Prisma Client from build'",
     "disabled-vercel-build": "npx prisma generate && echo 'Generated Prisma Client from vercel-build'",
