@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "debug": "^4.3.4",
     "prisma": "4.10.0-dev.25",
     "ts-node": "10.9.1",
     "vercel": "28.13.1"
