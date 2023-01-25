@@ -1,7 +1,9 @@
+// For Netlify Functions
+
 const { PrismaClient, Prisma } = require("@prisma/client");
 const client = new PrismaClient();
 
-exports.handler = async (req, res) => {
+exports.handler = async () => {
   console.log("Runtime");
   console.log(process.platform);
   console.log(process.release);
@@ -25,8 +27,16 @@ exports.handler = async (req, res) => {
   } catch (e) {
     console.log(e.message);
 
-    return res.status(500).json({ error: e.message });
+    return {
+      statusCode: 500,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ error: e.message }),
+    };
   }
 
-  return res.status(200).json({ ok: true });
+  return {
+    statusCode: 200,
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ok: true }),
+  };
 };

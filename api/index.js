@@ -1,3 +1,5 @@
+// For Vercel functions
+
 const { PrismaClient, Prisma } = require("@prisma/client");
 const client = new PrismaClient();
 
